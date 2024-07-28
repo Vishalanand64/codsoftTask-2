@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;500&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+html{
+    transition: all 1s;
+    scroll-behavior: smooth;
+}
+
+
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x:hidden;
+    background-color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
+    transition: all 1s;
+    font-family: poppins;
+}
+.navbar{
+    width: 100vw;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    box-shadow: 0px 5px 5px  rgb(178, 177, 177);
+    position:fixed;
+    z-index: 10;
+}
+.link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    padding: 0 60px;
+}
+.myname{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: rgb(66, 66, 66);
+    cursor: pointer;
+}
+
+.list{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.list:hover{
+    color: rgb(39, 114, 244);
+}
+.top-container{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+    justify-content: space-evenly;
+   
+}
+.left{
+    width: 550px;
+  
+}
+.left h1 {
+    font-family: poppins;
+    font-size: 50px;
+    color: rgb(62, 62, 62);
+}
+.left p {
+    font-family: poppins;
+}
+.right{
+    width: 300px;
+    height: 300px;
+    background-color: wheat;
+}
+.icon{
+    transition: 0.3s;
+    padding: 0 3px;
+}
+.icon:hover{
+    transform: scale(1.2);
+   
+}
+.right{
+    background: url(/myPhoto.jpg);
+    background-size: cover;
+    background-position: center center;
+    animation: border;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+   border: 2px solid black;
+    transition: all;
+    
+}
+@keyframes border {
+
+    0%{
+        border-top-left-radius: 40%;
+        border-top-right-radius: 60%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 20%;
+        
+
+    }
+    25%{
+        border-top-left-radius: 30%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 40%;
+
+    }
+    50%{
+        border-top-left-radius: 30%;
+        border-top-right-radius: 45%;
+        border-bottom-left-radius: 70%;
+        border-bottom-right-radius: 25%;
+
+    }
+    100%{
+        border-top-left-radius: 40%;
+        border-top-right-radius: 60%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 20%;
+      
+    }
+
+ 
+}
+
+.skill-container{
+    width: 70vw;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    
+}
+.inner-skill-container{
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.inner-skill-container p{
+    font-weight: 500;
+    font-size: 20px;
+}
+.bar{
+    width: 3px;
+    height: 30px;
+    background-color: rgb(3, 3, 3);
+    margin: 0 40px;
+}
+.skill-icon{
+    width: 50px;
+    margin-right: 50px;
+    animation-name: icons;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+}
+@keyframes icons {
+    to{
+        margin-right: 0px;
+    }
+}
+
+
+.project-container{
+    width: 100vw;
+    height: auto;
+}
+
+
+
+.skill-section-container{
+    
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+.project-card1{
+    background-image: url(project1.png);
+    width:40% ;
+    height: 25rem;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    margin: 0rem 1rem;
+    position: relative;
+   
+    
+}
+.project-card2{
+    background-image: url(project3.png);
+    width:40% ;
+    height: 25rem;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    margin: 0rem 1rem;
+    position: relative;
+
+}
+.project-card3{
+    background-image: url(project4.png);
+    width:40% ;
+    height: 25rem;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    margin: 0rem 1rem;
+    position: relative;
+
+}
+.project-card4{
+    background-image: url(Screenshot\ 2023-03-10\ 130700.png);
+    width:40% ;
+    height: 25rem;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    margin: 0rem 1rem;
+    position: relative;
+
+}
+.project-heading{
+    margin-top: 10rem;
+    text-align: center;
+    font-family: poppins;
+    font-size: 2.2rem;
+    color: rgb(43, 43, 43);
+}
+
+.project-links{
+    text-align: center;
+   
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    text-decoration: none;
+    color: white;
+    font-family: work sans;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 0.7rem 0;
+    border-radius: 0.5rem;
+}
+.project-links:hover{
+    
+    background-color: rgb(28, 28, 28);
+    box-shadow: 0px 0px 10px rgb(108, 107, 107);
+    
+}
+
+.contact-conatiner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.box{
+ 
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+   border: 2px dashed black;
+   box-sizing: content-box;
+   animation-name: move;
+   animation-duration: 8s;
+   animation-iteration-count: infinite;
+   transition: all 1s;
+ 
+}
+@keyframes move {
+   
+    50%{
+        transform: rotate(180deg);
+    }
+    
+}
+.contactIcon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation-name: flip;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    transition: all 1s;
+
+}
+@keyframes flip {
+    50%{
+        transform: rotate(180deg);
+    }
+}
+.whatsapp{
+    top: 0;
+    left: 45%;
+}
+.linkedin{
+    bottom: 0;
+    left: 45%;
+}
+.instagram{
+    top: 40%;
+}
+.github{
+    top: 40%;
+    right: 0;
+}
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .ul {
+        padding: 0 20px;
+    }
+
+    .top-container {
+        flex-direction: column;
+        padding-top: 100px;
+        align-items: center;
+    }
+
+    .left {
+        width: 90%;
+        text-align: center;
+    }
+
+    .right {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .left h1 {
+        font-size: 36px;
+    }
+
+    .inner-skill-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .skill-icon {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .skill-section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card1,
+    .project-card2,
+    .project-card3,
+    .project-card4 {
+        width: 80%;
+        height: 20rem;
+        margin: 1rem 0;
+    }
+
+    .project-heading {
+        font-size: 1.8rem;
+    }
+
+    .contact-conatiner {
+        height: auto;
+        padding: 20px;
+    }
+
+    .box {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contactIcon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .top-container {
+        flex-direction: column;
+        padding-top: 80px;
+        align-items: center;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .right {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .left h1 {
+        font-size: 30px;
+    }
+
+    .left p {
+        padding: 0 20px;
+    }
+
+    .skill-container {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .skill-icon {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .skill-section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card1,
+    .project-card2,
+    .project-card3,
+    .project-card4 {
+        width: 90%;
+        height: 15rem;
+        margin: 1rem 0;
+    }
+
+    .project-heading {
+        font-size: 1.6rem;
+    }
+
+    .contact-conatiner {
+        height: auto;
+        padding: 20px;
+    }
+
+    .box {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contactIcon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+
+    ul {
+       display: none;
+    }
+
+    .top-container {
+        flex-direction: column;
+        padding-top: 70px;
+        align-items: center;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .right {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .left h1 {
+        font-size: 24px;
+    }
+
+    .left p {
+        padding: 0 20px;
+    }
+
+    .skill-container {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .skill-icon {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .skill-section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card1,
+    .project-card2,
+    .project-card3,
+    .project-card4 {
+        width: 100%;
+        height: 12rem;
+        margin: 1rem 0;
+    }
+
+    .project-heading {
+        font-size: 1.4rem;
+    }
+
+    .contact-conatiner {
+        height: auto;
+        padding: 20px;
+    }
+
+    .box {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contactIcon {
+        width: 35px;
+        height: 35px;
+    }
+   
+}
